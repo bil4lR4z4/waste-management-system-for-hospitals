@@ -56,7 +56,10 @@ The system includes a **full inventory module**:
 - **Inventory Management** (purchase, sale, rent)  
 - **Secure and scalable Laravel application**  
 
-## Features
-email : admin@gmail.com
-password : admin@gmail.com
+## 🔐 Demo Credentials
+
+Use the following credentials to access the demo:
+
+- **Email:** admin@gmail.com  
+- **Password:** admin@gmail.com  
 
