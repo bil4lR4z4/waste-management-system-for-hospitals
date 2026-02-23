@@ -55,3 +55,8 @@ The system includes a **full inventory module**:
 - **Invoice Generation & Reports**  
 - **Inventory Management** (purchase, sale, rent)  
 - **Secure and scalable Laravel application**  
+
+## Features
+email : admin@gmail.com
+password : admin@gmail.com
+
