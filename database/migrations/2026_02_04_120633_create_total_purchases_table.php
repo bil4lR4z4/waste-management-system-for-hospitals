@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('total_purchases', function (Blueprint $table) {
+            $table->id();
+            $table->decimal('total')->nullable();
+            $table->date('purchase_date')->nullable();
+            $table->text('note')->nullable();
+            $table->tinyInteger('status')->default(1)->comment('1=active, 0=inactive');
+            $table->tinyInteger('trash')->default(0)->comment('0=not deleted, 1=deleted');
+            $table->unsignedBigInteger('owner_id')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('total_purchases');
+    }
+};
